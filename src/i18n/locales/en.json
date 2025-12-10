@@ -153,8 +153,8 @@
       "email": "changthongthaimassage@gmail.com"
     },
     "hours": {
-      "monSat": "Mon - Sat: 10am - 10pm",
-      "sunday": "Sunday: 12pm - 8pm"
+      "monSat": "Mon - Sat: 10am - 8pm",
+      "sunday": "Sunday: Closed"
     }
   },
   "legal": {

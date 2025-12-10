@@ -20,8 +20,8 @@ export const CONTACT_INFO = Object.freeze({
 })
 
 export const OPENING_HOURS = Object.freeze([
-  { day: 'Mon - Sat', time: '10am - 10pm' },
-  { day: 'Sunday', time: '12pm - 8pm' },
+  { day: 'Mon - Sat', time: '10am - 8pm' },
+  { day: 'Sunday', time: 'Closed' },
 ])
 
 export const SOCIAL_LINKS = Object.freeze({
