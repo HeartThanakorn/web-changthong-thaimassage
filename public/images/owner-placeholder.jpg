@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#1A4731"/>
+  <circle cx="400" cy="300" r="120" fill="#D4AF37" opacity="0.3"/>
+  <circle cx="400" cy="300" r="90" fill="#D4AF37" opacity="0.5"/>
+  <path d="M 400 390 Q 320 450 280 550 L 520 550 Q 480 450 400 390 Z" fill="#D4AF37" opacity="0.3"/>
+  <text x="400" y="650" font-family="Arial, sans-serif" font-size="28" fill="#D4AF37" text-anchor="middle" font-weight="bold">OWNER PHOTO</text>
+  <text x="400" y="690" font-family="Arial, sans-serif" font-size="20" fill="#F9F6F2" text-anchor="middle">Replace with actual image</text>
+</svg>

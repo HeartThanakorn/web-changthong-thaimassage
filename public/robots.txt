@@ -1,0 +1,8 @@
+# robots.txt for Thanyatorn Thai Massage
+# https://thaithanyamassage.de
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://thaithanyamassage.de/sitemap.xml

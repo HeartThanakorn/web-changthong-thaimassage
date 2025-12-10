@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: theme('colors.text-light');
+    background-color: theme('colors.background-light');
+    font-family: theme('fontFamily.display');
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    :root {
+      font-size: 17px;
+    }
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: theme('colors.background-light');
+    color: theme('colors.text-light');
+    font-family: theme('fontFamily.display');
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .dark body {
+    background-color: theme('colors.background-dark');
+    color: theme('colors.text-dark');
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(to right, #ffd700, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

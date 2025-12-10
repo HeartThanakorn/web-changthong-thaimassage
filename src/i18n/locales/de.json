@@ -1,0 +1,195 @@
+{
+  "brand": {
+    "name": "Chang Thong Thaimassage",
+    "tagline": "Ihr Rückzugsort für authentische Thai-Heilung und Entspannung."
+  },
+  "language": {
+    "english": "English",
+    "german": "Deutsch",
+    "switchLabel": "Sprache"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "services": "Unsere Leistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "cta": {
+    "book": "Jetzt buchen",
+    "bookEscape": "Buchen Sie Ihre Auszeit",
+    "learnMore": "Mehr erfahren"
+  },
+  "hero": {
+    "title": "Erleben Sie authentische Thai-Entspannung",
+    "description": "Entdecken Sie die Kunst der traditionellen Heilung und stellen Sie das natürliche Gleichgewicht Ihres Körpers in unserem ruhigen Rückzugsort wieder her."
+  },
+  "about": {
+    "pageTitle": "Über uns",
+    "ownerAlt": "Inhaberin von Chang Thong Thaimassage",
+    "introTitle": "Ihre zertifizierte Massage-Spezialistin",
+    "bio1": "Mit drei Jahren engagierter Praxis im Bereich Massage und ganzheitlichem Wohlbefinden widme ich mich leidenschaftlich der Förderung von tiefer Entspannung und Harmonie durch authentische Techniken. Ich glaube daran, dass wahres Wohlbefinden aus der Balance von Körper und Geist entsteht.",
+    "bio2": "Mein Engagement für professionelle Exzellenz zeigt sich in meiner stetigen Weiterbildung. Ich habe spezialisierte Ausbildungen in Deutschland absolviert und besitze Zertifizierungen in fortgeschrittenen Methoden, darunter Thai Royal Fortschritt und Thai Flow Massage, sowie die wohltuende Aroma Massage und die traditionelle hawaiianische Lomi Lomi Nui Massage.",
+    "bio3": "Jede Behandlung wird mit Sorgfalt, Respekt und Fokus auf Ihre individuellen Bedürfnisse durchgeführt.",
+    "qualificationsTitle": "Meine Qualifikationen",
+    "certificateAlt": "Professionelles Zertifikat"
+  },
+  "contact": {
+    "pageTitle": "Kontakt",
+    "addressTitle": "Unser Standort",
+    "contactTitle": "Kontaktieren Sie uns",
+    "phoneLabel": "Telefon:",
+    "emailLabel": "E-Mail:",
+    "mapTitle": "Finden Sie uns"
+  },
+  "credits": {
+    "pageTitle": "Bildnachweise",
+    "intro": "Wir schätzen geistiges Eigentum und möchten den Urhebern der auf unserer Website verwendeten Bilder angemessene Anerkennung zollen.",
+    "freepikTitle": "Freepik",
+    "freepikText": "Mehrere Bilder auf dieser Website stammen von Freepik, einer Plattform, die hochwertige Grafikressourcen anbietet.",
+    "aiGeneratedTitle": "KI-generierte Bilder",
+    "aiGeneratedText": "Einige Bilder auf dieser Website wurden mit künstlicher Intelligenz erstellt, um bestimmte visuelle Konzepte zu erzielen.",
+    "imagesUsed": "Bilder im Service-Bereich:",
+    "antistressImg": "<0>Anti-Stress Massage:</0> Bild von <1>gpointstudio auf Freepik</1>",
+    "deeptissueImg": "<0>Deep Tissue Massage:</0> Bild von <1>javi_indy auf Freepik</1>",
+    "lomilomiImg": "<0>Lomi-Lomi Massage:</0> Bild generiert von KI mit Gemini.",
+    "footmassageImg": "<0>Foot Massage:</0> Bild von <1>freepik auf Freepik</1>",
+    "licenseTitle": "Lizenzinformationen",
+    "licenseText": "Alle Bilder von Freepik werden gemäß den kostenlosen Lizenzbedingungen von Freepik verwendet, die eine Namensnennung erfordern. Wir sind den talentierten Designern und Fotografen dankbar, die ihre Arbeit zur Verfügung stellen. KI-generierte Bilder wurden als Originalinhalte für diese Website erstellt.",
+    "footerNote": "Wenn Sie ein Urheberrechtsinhaber sind und glauben, dass Inhalte auf dieser Website Ihre Rechte verletzen, kontaktieren Sie uns bitte umgehend und wir werden das Problem umgehend beheben."
+  },
+  "sections": {
+    "treatments": {
+      "title": "Unsere Massage-Behandlungen",
+      "subtitle": "Professionelle Thai-Massagen für Ihr Wohlbefinden – mit transparenten Preisen und flexiblen Zeitoptionen.",
+      "services": {
+        "flowmassage": {
+          "title": "Thai Flowmassage",
+          "description": "Eine harmonische Kombination aus sanften Dehnungen und rhythmischen Drucktechniken. Diese traditionelle Massage fördert die Durchblutung, löst Verspannungen und bringt Körper und Geist in Einklang.",
+          "pricing": {
+            "40min": "40 Minuten – 80 EUR",
+            "60min": "60 Minuten – 100 EUR",
+            "90min": "90 Minuten – 140 EUR",
+            "120min": "120 Minuten – 190 EUR"
+          }
+        },
+        "antistress": {
+          "title": "Anti-Stress Massage",
+          "description": "Speziell entwickelt, um Stress abzubauen und tiefe Entspannung zu fördern. Diese Massage kombiniert beruhigende Techniken, die Ihnen helfen, loszulassen und neue Energie zu tanken.",
+          "pricing": {
+            "40min": "40 Minuten – 70 EUR",
+            "60min": "60 Minuten – 90 EUR",
+            "90min": "90 Minuten – 130 EUR",
+            "120min": "120 Minuten – 170 EUR"
+          }
+        },
+        "deeptissue": {
+          "title": "Deep Tissue Massage",
+          "description": "Intensive Massage zur Behandlung tiefliegender Muskelschichten. Ideal bei chronischen Verspannungen und Schmerzen – fördert die Regeneration und verbessert die Beweglichkeit.",
+          "pricing": {
+            "40min": "40 Minuten – 70 EUR",
+            "60min": "60 Minuten – 90 EUR",
+            "90min": "90 Minuten – 130 EUR",
+            "120min": "120 Minuten – 170 EUR"
+          }
+        },
+        "lomilomi": {
+          "title": "Lomi-Lomi Massage",
+          "description": "Die traditionelle hawaiianische Tempelmassage – fließende, wellenartige Bewegungen, die den gesamten Körper harmonisieren. Ein ganzheitliches Erlebnis für tiefe Entspannung und innere Balance.",
+          "pricing": {
+            "40min": "40 Minuten – 80 EUR",
+            "60min": "60 Minuten – 100 EUR",
+            "90min": "90 Minuten – 150 EUR",
+            "120min": "120 Minuten – 200 EUR"
+          }
+        },
+        "footmassage": {
+          "title": "Foot Massage",
+          "description": "Eine vitalisierende Behandlung für müde Füße und schwere Beine. Diese Massage kombiniert sanfte Dehnungen mit der Stimulation gezielter Reflexpunkte, um die Durchblutung zu fördern und Ihren natürlichen Energiefluss wiederherzustellen.",
+          "pricing": {
+            "40min": "40 Minuten – 70 EUR",
+            "60min": "60 Minuten – 90 EUR",
+            "120min": "120 Minuten – 130 EUR",
+            "180min": "180 Minuten – 170 EUR"
+          }
+        }
+      }
+    },
+    "about": {
+      "title": "Die Kunst des Thai-Wellness",
+      "paragraph1": "Unsere Geschichte wurzelt in den reichen Traditionen der thailändischen Heilkunst. Wir sind bestrebt, ein authentisches und verjüngendes Erlebnis zu bieten, indem wir altehrwürdige Techniken anwenden, die über Generationen weitergegeben wurden, um Harmonie und Gleichgewicht in Körper, Geist und Seele zu fördern.",
+      "paragraph2": "Bei Chang Thong Thaimassage ist jede Behandlung eine Reise zum Wohlbefinden, geleitet von unseren erfahrenen Therapeuten in einem Rückzugsort des Friedens und der Ruhe."
+    },
+    "testimonials": {
+      "title": "Was unsere Kunden sagen",
+      "subtitle": "Hören Sie von denen, die die Gelassenheit und Heilung in unserem Spa erlebt haben.",
+      "items": [
+        {
+          "author": "Jessica L.",
+          "text": "Ein absolut transzendentes Erlebnis. Die traditionelle Thai-Massage war authentisch und unglaublich effektiv. Ich ging völlig erneuert hinaus."
+        },
+        {
+          "author": "Mark T.",
+          "text": "Das Ambiente ist so friedlich und das Personal ist wunderbar. Die Aromatherapie-Massage war die beste, die ich je hatte. Sehr zu empfehlen!"
+        },
+        {
+          "author": "Sarah P.",
+          "text": "Von dem Moment an, als ich hereinkam, fühlte ich mich entspannt. Die Liebe zum Detail ist erstaunlich. Die Fußreflexzonenmassage war ein Traum."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Ihr Rückzugsort für authentische Thai-Heilung und Entspannung.",
+    "contactTitle": "Kontaktinformationen",
+    "hoursTitle": "Öffnungszeiten",
+    "socialTitle": "Folgen Sie uns",
+    "copyright": "Alle Rechte vorbehalten.",
+    "address": {
+      "line1": "c/o monbijou hotel berlin",
+      "line2": "Monbijouplatz 1 10178 Berlin",
+      "phone": "+4915159236289",
+      "email": "changthongthaimassage@gmail.com"
+    },
+    "hours": {
+      "monSat": "Mo - Sa: 10 - 22 Uhr",
+      "sunday": "Sonntag: 12 - 20 Uhr"
+    }
+  },
+  "legal": {
+    "impressumTitle": "Impressum",
+    "impressumContent": {
+      "section1": "Angaben gemäß § 5 TMG",
+      "companyName": "Chang Thong Thaimassage",
+      "address1": "c/o monbijou hotel berlin",
+      "address2": "Monbijouplatz 1 10178 Berlin",
+      "contactLabel": "Kontakt:",
+      "phone": "Telefon: +4915159236289",
+      "email": "E-Mail: changthongthaimassage@gmail.com",
+      "placeholder": "Dies ist Platzhalterinhalt. Vor dem Start durch tatsächliche rechtliche Informationen ersetzen."
+    },
+    "privacyTitle": "Datenschutzerklärung",
+    "privacyContent": {
+      "intro": "Datenschutzerklärung",
+      "description": "Dies ist Platzhalterinhalt für die Datenschutzerklärung. Vor dem Start durch eine tatsächliche DSGVO-konforme Datenschutzerklärung ersetzen.",
+      "section1": "Die Datenschutzerklärung sollte Informationen enthalten über:",
+      "items": [
+        "Informationen zum Datenverantwortlichen",
+        "Arten der erhobenen personenbezogenen Daten",
+        "Zweck und Rechtsgrundlage der Datenverarbeitung",
+        "Aufbewahrungsfristen für Daten",
+        "Rechte der betroffenen Person",
+        "Cookie-Nutzung und Einwilligung",
+        "Kontakt für Datenschutzanfragen"
+      ]
+    },
+    "termsTitle": "Nutzungsbedingungen"
+  },
+  "cookie": {
+    "consentText": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und den Datenverkehr zu analysieren. Durch Klicken auf 'Akzeptieren' stimmen Sie der Verwendung von Google Analytics zu. Weitere Informationen finden Sie in unserer <0></0>",
+    "privacyLinkText": "Datenschutzerklärung",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
+  }
+}

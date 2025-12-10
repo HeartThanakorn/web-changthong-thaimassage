@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#F4E8D9" />
+  <rect x="40" y="40" width="720" height="520" rx="32" fill="#D4AF37" opacity="0.25" />
+  <text x="50%" y="45%" text-anchor="middle" fill="#1A4731" font-family="Manrope, sans-serif" font-size="42" font-weight="700">Hot Stone</text>
+  <text x="50%" y="55%" text-anchor="middle" fill="#1A4731" font-family="Manrope, sans-serif" font-size="18" opacity="0.7">Placeholder image · replace before launch</text>
+</svg>
