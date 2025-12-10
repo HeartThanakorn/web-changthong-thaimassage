@@ -14,7 +14,7 @@ export const SETMORE_BOOKING_URL =
 export const CONTACT_INFO = Object.freeze({
   name: 'Chang Thong Thaimassage',
   phone: '+4903058799820',
-  email: 'changthongthaimassage@gmail.com',
+  email: 'changthong.berlin@gmail.com',
   addressLine1: 'Fuggerstraße 6',
   addressLine2: '10777 Berlin',
 })

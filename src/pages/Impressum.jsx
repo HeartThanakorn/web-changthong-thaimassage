@@ -37,7 +37,7 @@ export default function ImpressumPage() {
             </h2>
             <p className="leading-relaxed">
               <span className="font-semibold">Telefon:</span> +49 (0) 30 587 998 20<br />
-              <span className="font-semibold">E-Mail:</span> changthongthaimassage@gmail.com
+              <span className="font-semibold">E-Mail:</span> changthong.berlin@gmail.com
             </p>
           </div>
 
