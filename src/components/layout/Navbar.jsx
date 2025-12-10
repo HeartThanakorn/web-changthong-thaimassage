@@ -56,7 +56,7 @@ export default function Navbar() {
             <img
               src="/images/logo.png"
               alt={t('brand.name')}
-              className="h-20 w-auto"
+              className="h-56 w-auto"
             />
           </div>
           <div className="ml-auto hidden items-center justify-end gap-8 pr-2 sm:pr-4 xl:flex">
