@@ -58,14 +58,12 @@ function AboutUs() {
           </div>
         </div>
 
-        {/* Section 2: Qualifications */}
-        <div className="mt-16 sm:mt-24">
-          {/* Section Title */}
+        {/* Section 2: Qualifications - Hidden until certificates are ready */}
+        {/* <div className="mt-16 sm:mt-24">
           <h2 className="text-2xl font-bold text-primary-accent text-center mb-12">
             {t('about.qualificationsTitle')}
           </h2>
 
-          {/* Certificate Grid (2x2 on mobile, 4 columns on desktop) */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-12">
             <img
               src="/images/cert-1-placeholder.jpg"
@@ -90,7 +88,7 @@ function AboutUs() {
           </div>
 
           {/* TODO: (Rechtlicher Hinweis) Alle Platzhalterbilder (owner-placeholder.jpg und cert-*.jpg) MÜSSEN vor dem Go-Live durch echte Fotos ersetzt werden, um Abmahnungen zu vermeiden. */}
-        </div>
+        {/* </div> */}
       </div>
     </Layout>
   );
