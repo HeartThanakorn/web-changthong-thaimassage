@@ -33,7 +33,7 @@ export default function TreatmentsSection() {
   const { t } = useTranslation()
 
   return (
-    <section id="treatments" className="py-8 sm:py-12">
+    <section id="treatments" className="pt-4 pb-8 sm:pt-6 sm:pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-primary-accent sm:text-4xl pb-1">

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import Layout from '@/components/layout/Layout.jsx'
 import HeroSection from '@/components/sections/HeroSection.jsx'
+import EssenceSection from '@/components/sections/EssenceSection.jsx'
 import TreatmentsSection from '@/components/sections/TreatmentsSection.jsx'
 import GoogleReviewsSection from '@/components/sections/GoogleReviewsSection.jsx'
 import AboutSection from '@/components/sections/AboutSection.jsx'
@@ -26,6 +27,7 @@ export default function HomePage() {
         <link rel="canonical" href="https://thaithanyamassage.de/" />
       </Helmet>
       <HeroSection />
+      <EssenceSection />
       <TreatmentsSection />
       <GoogleReviewsSection />
       <AboutSection />
