@@ -36,7 +36,7 @@ export default function ImpressumPage() {
               Kontakt
             </h2>
             <p className="leading-relaxed">
-              <span className="font-semibold">Telefon:</span> +49 (0) 151 5923 6289<br />
+              <span className="font-semibold">Telefon:</span> +49 (0) 30 587 998 20<br />
               <span className="font-semibold">E-Mail:</span> changthongthaimassage@gmail.com
             </p>
           </div>

@@ -39,7 +39,7 @@ export default function DatenschutzPage() {
               <span className="font-bold">Chang Thong Thaimassage</span><br />
               Thanyatorn Kaewchamlong<br />
               Fuggerstraße 6, 10777 Berlin<br />
-              Telefon: +49 (0) 151 5923 6289<br />
+              Telefon: +49 (0) 30 587 998 20<br />
               E-Mail: changthongthaimassage@gmail.com
             </p>
           </div>

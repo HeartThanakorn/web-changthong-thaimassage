@@ -13,7 +13,7 @@ export const SETMORE_BOOKING_URL =
 
 export const CONTACT_INFO = Object.freeze({
   name: 'Chang Thong Thaimassage',
-  phone: '+4915159236289',
+  phone: '+4903058799820',
   email: 'changthongthaimassage@gmail.com',
   addressLine1: 'Fuggerstraße 6',
   addressLine2: '10777 Berlin',
@@ -27,5 +27,5 @@ export const OPENING_HOURS = Object.freeze([
 export const SOCIAL_LINKS = Object.freeze({
   facebook: 'https://facebook.com/changthongthaimassage', // TODO: Update with actual Facebook page
   instagram: 'https://instagram.com/changthongthaimassage', // TODO: Update with actual Instagram handle
-  whatsapp: 'https://wa.me/4915159236289', // Updated with actual phone number
+  whatsapp: 'https://wa.me/4903058799820', // Updated with actual phone number
 })
