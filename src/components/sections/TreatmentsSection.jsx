@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import Button from '@/components/ui/Button.jsx'
+import { SETMORE_BOOKING_URL } from '@/constants.js'
 
 export default function TreatmentsSection() {
   const { t } = useTranslation()
@@ -77,7 +79,7 @@ export default function TreatmentsSection() {
               }`}
           >
             {/* Image */}
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center">
               <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl">
                 <img
                   src={activeProgram.image}
@@ -86,6 +88,13 @@ export default function TreatmentsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
+              <Button
+                href={SETMORE_BOOKING_URL}
+                external
+                className="mt-10 px-12 py-4 text-xl font-bold shadow-lg hover:shadow-xl"
+              >
+                {t('cta.book')}
+              </Button>
             </div>
 
             {/* Services List */}
