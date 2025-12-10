@@ -56,11 +56,8 @@ export default function Navbar() {
             <img
               src="/images/logo.png"
               alt={t('brand.name')}
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
-            <h2 className="text-sm sm:text-base xl:text-xl font-bold text-primary-accent">
-              {t('brand.name')}
-            </h2>
           </div>
           <div className="ml-auto hidden items-center justify-end gap-8 pr-2 sm:pr-4 xl:flex">
             <nav className="flex items-center gap-6">
