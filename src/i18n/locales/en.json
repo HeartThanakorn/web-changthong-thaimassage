@@ -191,5 +191,8 @@
     "privacyLinkText": "Privacy Policy",
     "accept": "Accept",
     "decline": "Decline"
+  },
+  "reviews": {
+    "title": "What Our Customers Say"
   }
 }

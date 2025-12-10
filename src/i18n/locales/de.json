@@ -191,5 +191,8 @@
     "privacyLinkText": "Datenschutzerklärung",
     "accept": "Akzeptieren",
     "decline": "Ablehnen"
+  },
+  "reviews": {
+    "title": "Was unsere Kunden sagen"
   }
 }

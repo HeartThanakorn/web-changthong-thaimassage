@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async'
 import Layout from '@/components/layout/Layout.jsx'
 import HeroSection from '@/components/sections/HeroSection.jsx'
 import TreatmentsSection from '@/components/sections/TreatmentsSection.jsx'
+import GoogleReviewsSection from '@/components/sections/GoogleReviewsSection.jsx'
 import AboutSection from '@/components/sections/AboutSection.jsx'
 // import TestimonialsSection from '@/components/sections/TestimonialsSection.jsx'
 
@@ -26,6 +27,7 @@ export default function HomePage() {
       </Helmet>
       <HeroSection />
       <TreatmentsSection />
+      <GoogleReviewsSection />
       <AboutSection />
       {/* <TestimonialsSection /> */}
     </Layout>
