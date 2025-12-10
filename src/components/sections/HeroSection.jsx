@@ -39,7 +39,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center p-4">
+      <div className="relative flex min-h-[45vh] md:min-h-[50vh] lg:min-h-[85vh] landscape:min-h-[85vh] flex-col items-center justify-center p-4 py-12 md:py-8 lg:py-4">
         <div className="flex max-w-2xl flex-col gap-4 text-center">
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-gradient-gold sm:text-5xl md:text-6xl pb-2">
             {t('hero.title')}
