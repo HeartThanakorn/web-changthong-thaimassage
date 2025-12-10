@@ -16,7 +16,7 @@ export default function CookieBanner() {
       expires={365}
       overlay={false}
       style={{
-        background: '#1A4731',
+        background: '#5B2D82',
         color: '#F9F6F2',
         textAlign: 'left',
         padding: '0.75rem 1rem',
@@ -27,7 +27,7 @@ export default function CookieBanner() {
       }}
       buttonStyle={{
         background: '#D4AF37',
-        color: '#1A4731',
+        color: '#5B2D82',
         padding: '0.5rem 1rem',
         borderRadius: '0.5rem',
         fontWeight: 600,

@@ -51,18 +51,18 @@ function App() {
         expires={365}
         onAccept={handleAccept}
         onDecline={() => { }}
-        style={{ background: "#1A4731" }}
+        style={{ background: "#5B2D82" }}
         buttonStyle={{
-          backgroundColor: "#FFD700",
-          color: "#1A4731",
+          backgroundColor: "#D4AF37",
+          color: "#5B2D82",
           fontSize: "13px",
           fontWeight: "bold",
           borderRadius: "4px",
         }}
         declineButtonStyle={{
           backgroundColor: "transparent",
-          border: "1px solid #FFD700",
-          color: "#FFD700",
+          border: "1px solid #D4AF37",
+          color: "#D4AF37",
           fontSize: "13px",
           borderRadius: "4px",
         }}
