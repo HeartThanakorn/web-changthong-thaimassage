@@ -1,8 +1,8 @@
-# robots.txt for Thanyatorn Thai Massage
-# https://thaithanyamassage.de
+# robots.txt for Changthong Thai Massage
+# https://changthong-thaimassage.de
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://thaithanyamassage.de/sitemap.xml
+Sitemap: https://changthong-thaimassage.de/sitemap.xml
