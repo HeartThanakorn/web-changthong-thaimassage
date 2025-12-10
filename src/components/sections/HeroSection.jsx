@@ -7,6 +7,8 @@ const HERO_IMAGES = [
   '/images/hero-placeholder.jpg',
   '/images/hero-placeholder2.jpg',
   '/images/hero-placeholder3.jpg',
+  '/images/hero-placeholder4.jpg',
+  '/images/hero-placeholder5.jpg',
 ]
 
 export default function HeroSection() {
