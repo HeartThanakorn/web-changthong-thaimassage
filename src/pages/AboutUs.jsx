@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import Layout from '../components/layout/Layout';
 
@@ -50,7 +50,7 @@ function AboutUs() {
               {t('about.bio1')}
             </p>
             <p className="text-lg text-primary dark:text-text-dark leading-relaxed mt-4">
-              {t('about.bio2')}
+              <Trans i18nKey="about.bio2" components={[<strong className="font-bold" />]} />
             </p>
             <p className="text-lg text-primary dark:text-text-dark leading-relaxed mt-4">
               {t('about.bio3')}
