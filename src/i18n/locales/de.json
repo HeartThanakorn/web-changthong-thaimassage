@@ -61,58 +61,149 @@
   },
   "sections": {
     "treatments": {
-      "title": "Unsere Massage-Behandlungen",
-      "subtitle": "Professionelle Thai-Massagen für Ihr Wohlbefinden – mit transparenten Preisen und flexiblen Zeitoptionen.",
-      "services": {
-        "flowmassage": {
-          "title": "Thai Flowmassage",
-          "description": "Eine harmonische Kombination aus sanften Dehnungen und rhythmischen Drucktechniken. Diese traditionelle Massage fördert die Durchblutung, löst Verspannungen und bringt Körper und Geist in Einklang.",
-          "pricing": {
-            "40min": "40 Minuten – 80 EUR",
-            "60min": "60 Minuten – 100 EUR",
-            "90min": "90 Minuten – 140 EUR",
-            "120min": "120 Minuten – 190 EUR"
-          }
+      "title": "Unsere Leistungen",
+      "subtitle": "Professionelle Massagen für Ihr Wohlbefinden – mit transparenten Preisen.",
+      "discount": "10€ RABATT AUF PAARMASSAGEN",
+      "tabs": {
+        "massage": "MASSAGEPROGRAMM",
+        "wellness": "WELLNESSPROGRAMM"
+      },
+      "programs": {
+        "massage": {
+          "image": "/images/service-thaiflowmassage.png",
+          "imageAlt": "Traditionelle Thai Massage",
+          "services": [
+            {
+              "name": "KLASSISCHE THAIMASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "40,-EUR"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "60,-EUR"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "80,-EUR"
+                }
+              ]
+            },
+            {
+              "name": "RÜCKENMASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "40,-EUR"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "60,-EUR"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "80,-EUR"
+                }
+              ]
+            },
+            {
+              "name": "INTENSIVMASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "45,-EUR"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "70,-EUR"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "95,-EUR"
+                }
+              ]
+            },
+            {
+              "name": "THAI KRÄUTERSTEMPEL MASSAGE",
+              "prices": [
+                {
+                  "duration": "60 min",
+                  "price": "80,-EUR"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "105,-EUR"
+                }
+              ]
+            }
+          ]
         },
-        "antistress": {
-          "title": "Anti-Stress Massage",
-          "description": "Speziell entwickelt, um Stress abzubauen und tiefe Entspannung zu fördern. Diese Massage kombiniert beruhigende Techniken, die Ihnen helfen, loszulassen und neue Energie zu tanken.",
-          "pricing": {
-            "40min": "40 Minuten – 70 EUR",
-            "60min": "60 Minuten – 90 EUR",
-            "90min": "90 Minuten – 130 EUR",
-            "120min": "120 Minuten – 170 EUR"
-          }
-        },
-        "deeptissue": {
-          "title": "Deep Tissue Massage",
-          "description": "Intensive Massage zur Behandlung tiefliegender Muskelschichten. Ideal bei chronischen Verspannungen und Schmerzen – fördert die Regeneration und verbessert die Beweglichkeit.",
-          "pricing": {
-            "40min": "40 Minuten – 70 EUR",
-            "60min": "60 Minuten – 90 EUR",
-            "90min": "90 Minuten – 130 EUR",
-            "120min": "120 Minuten – 170 EUR"
-          }
-        },
-        "lomilomi": {
-          "title": "Lomi-Lomi Massage",
-          "description": "Die traditionelle hawaiianische Tempelmassage – fließende, wellenartige Bewegungen, die den gesamten Körper harmonisieren. Ein ganzheitliches Erlebnis für tiefe Entspannung und innere Balance.",
-          "pricing": {
-            "40min": "40 Minuten – 80 EUR",
-            "60min": "60 Minuten – 100 EUR",
-            "90min": "90 Minuten – 150 EUR",
-            "120min": "120 Minuten – 200 EUR"
-          }
-        },
-        "footmassage": {
-          "title": "Foot Massage",
-          "description": "Eine vitalisierende Behandlung für müde Füße und schwere Beine. Diese Massage kombiniert sanfte Dehnungen mit der Stimulation gezielter Reflexpunkte, um die Durchblutung zu fördern und Ihren natürlichen Energiefluss wiederherzustellen.",
-          "pricing": {
-            "40min": "40 Minuten – 70 EUR",
-            "60min": "60 Minuten – 90 EUR",
-            "120min": "120 Minuten – 130 EUR",
-            "180min": "180 Minuten – 170 EUR"
-          }
+        "wellness": {
+          "image": "/images/service-antistress.jpg",
+          "imageAlt": "Wellness Massage",
+          "services": [
+            {
+              "name": "AROMA-ÖLMASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "45,-EUR"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "70,-EUR"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "95,-EUR"
+                }
+              ]
+            },
+            {
+              "name": "ANTI-STRESS-MASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "45,-EUR"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "70,-EUR"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "95,-EUR"
+                }
+              ]
+            },
+            {
+              "name": "HOT-STONE-MASSAGE",
+              "prices": [
+                {
+                  "duration": "60 min",
+                  "price": "80,-EUR"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "105,-EUR"
+                }
+              ]
+            },
+            {
+              "name": "KOPF & GESICHTMASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "40,-EUR"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "60,-EUR"
+                }
+              ]
+            }
+          ]
         }
       }
     },

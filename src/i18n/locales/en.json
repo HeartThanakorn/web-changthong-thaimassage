@@ -61,58 +61,149 @@
   },
   "sections": {
     "treatments": {
-      "title": "Our Massage Treatments",
-      "subtitle": "Professional Thai massages for your well-being – with transparent pricing and flexible time options.",
-      "services": {
-        "flowmassage": {
-          "title": "Thai Flowmassage",
-          "description": "A harmonious combination of gentle stretches and rhythmic pressure techniques. This traditional massage promotes circulation, releases tension, and brings body and mind into balance.",
-          "pricing": {
-            "40min": "40 minutes – 80 EUR",
-            "60min": "60 minutes – 100 EUR",
-            "90min": "90 minutes – 140 EUR",
-            "120min": "120 minutes – 190 EUR"
-          }
+      "title": "Our Services",
+      "subtitle": "Professional massages for your well-being – with transparent pricing.",
+      "discount": "€10 DISCOUNT ON COUPLES MASSAGE",
+      "tabs": {
+        "massage": "MASSAGE PROGRAM",
+        "wellness": "WELLNESS PROGRAM"
+      },
+      "programs": {
+        "massage": {
+          "image": "/images/service-thaiflowmassage.png",
+          "imageAlt": "Traditional Thai Massage",
+          "services": [
+            {
+              "name": "CLASSIC THAI MASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "€40"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "€60"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "€80"
+                }
+              ]
+            },
+            {
+              "name": "BACK MASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "€40"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "€60"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "€80"
+                }
+              ]
+            },
+            {
+              "name": "INTENSIVE MASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "€45"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "€70"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "€95"
+                }
+              ]
+            },
+            {
+              "name": "THAI HERBAL STAMP MASSAGE",
+              "prices": [
+                {
+                  "duration": "60 min",
+                  "price": "€80"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "€105"
+                }
+              ]
+            }
+          ]
         },
-        "antistress": {
-          "title": "Anti-Stress Massage",
-          "description": "Specially designed to reduce stress and promote deep relaxation. This massage combines calming techniques that help you let go and recharge your energy.",
-          "pricing": {
-            "40min": "40 minutes – 70 EUR",
-            "60min": "60 minutes – 90 EUR",
-            "90min": "90 minutes – 130 EUR",
-            "120min": "120 minutes – 170 EUR"
-          }
-        },
-        "deeptissue": {
-          "title": "Deep Tissue Massage",
-          "description": "Intensive massage targeting deep muscle layers. Ideal for chronic tension and pain – promotes regeneration and improves mobility.",
-          "pricing": {
-            "40min": "40 minutes – 70 EUR",
-            "60min": "60 minutes – 90 EUR",
-            "90min": "90 minutes – 130 EUR",
-            "120min": "120 minutes – 170 EUR"
-          }
-        },
-        "lomilomi": {
-          "title": "Lomi-Lomi Massage",
-          "description": "The traditional Hawaiian temple massage – flowing, wave-like movements that harmonize the entire body. A holistic experience for deep relaxation and inner balance.",
-          "pricing": {
-            "40min": "40 minutes – 80 EUR",
-            "60min": "60 minutes – 100 EUR",
-            "90min": "90 minutes – 150 EUR",
-            "120min": "120 minutes – 200 EUR"
-          }
-        },
-        "footmassage": {
-          "title": "Foot Massage",
-          "description": "A revitalizing treatment for tired feet and heavy legs. This massage combines gentle stretching with the stimulation of specific reflex points to improve circulation and restore your natural energy flow.",
-          "pricing": {
-            "40min": "40 minutes – 70 EUR",
-            "60min": "60 minutes – 90 EUR",
-            "120min": "120 minutes – 130 EUR",
-            "180min": "180 minutes – 170 EUR"
-          }
+        "wellness": {
+          "image": "/images/service-antistress.jpg",
+          "imageAlt": "Wellness Massage",
+          "services": [
+            {
+              "name": "AROMA OIL MASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "€45"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "€70"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "€95"
+                }
+              ]
+            },
+            {
+              "name": "ANTI-STRESS MASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "€45"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "€70"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "€95"
+                }
+              ]
+            },
+            {
+              "name": "HOT STONE MASSAGE",
+              "prices": [
+                {
+                  "duration": "60 min",
+                  "price": "€80"
+                },
+                {
+                  "duration": "90 min",
+                  "price": "€105"
+                }
+              ]
+            },
+            {
+              "name": "HEAD & FACE MASSAGE",
+              "prices": [
+                {
+                  "duration": "30 min",
+                  "price": "€40"
+                },
+                {
+                  "duration": "60 min",
+                  "price": "€60"
+                }
+              ]
+            }
+          ]
         }
       }
     },

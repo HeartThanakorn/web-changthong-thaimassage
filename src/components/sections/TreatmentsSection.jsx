@@ -1,41 +1,28 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import ServiceCard from '@/components/cards/ServiceCard.jsx'
-
-const SERVICES = [
-  {
-    key: 'flowmassage',
-    imageUrl: '/images/service-thaiflowmassage.png',
-    alt: 'Therapist performing a Thai flow massage with gentle stretches',
-  },
-  {
-    key: 'antistress',
-    imageUrl: '/images/service-antistress.jpg',
-    alt: 'Relaxing anti-stress massage for deep relaxation',
-  },
-  {
-    key: 'deeptissue',
-    imageUrl: '/images/service-deeptissue.jpg',
-    alt: 'Deep tissue massage targeting muscle layers',
-  },
-  {
-    key: 'lomilomi',
-    imageUrl: '/images/service-lomilomi.jpg',
-    alt: 'Hawaiian Lomi-Lomi massage with flowing movements',
-  },
-  {
-    key: 'footmassage',
-    imageUrl: '/images/service-footmassage.jpg',
-    alt: 'Revitalizing foot massage for tired feet and legs',
-  },
-]
 
 export default function TreatmentsSection() {
   const { t } = useTranslation()
+  const [activeTab, setActiveTab] = useState('massage')
+  const [slideDirection, setSlideDirection] = useState('right')
+
+  const programs = t('sections.treatments.programs', { returnObjects: true })
+  const tabs = t('sections.treatments.tabs', { returnObjects: true })
+
+  const handleTabChange = (tab) => {
+    if (tab !== activeTab) {
+      setSlideDirection(tab === 'wellness' ? 'right' : 'left')
+      setActiveTab(tab)
+    }
+  }
+
+  const activeProgram = programs[activeTab]
 
   return (
-    <section id="treatments" className="pt-4 pb-8 sm:pt-6 sm:pb-12">
+    <section id="treatments" className="pt-0 pb-12 sm:pt-2 sm:pb-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-12 text-center">
+        {/* Header */}
+        <div className="mb-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-primary-accent sm:text-4xl pb-1">
             {t('sections.treatments.title')}
           </h2>
@@ -43,21 +30,125 @@ export default function TreatmentsSection() {
             {t('sections.treatments.subtitle')}
           </p>
         </div>
-        <div className="grid grid-cols-1 items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((service) => (
-            <ServiceCard
-              key={service.key}
-              title={t(`sections.treatments.services.${service.key}.title`)}
-              description={t(
-                `sections.treatments.services.${service.key}.description`,
-              )}
-              pricing={t(`sections.treatments.services.${service.key}.pricing`, { returnObjects: true })}
-              imageUrl={service.imageUrl}
-              alt={service.alt}
-            />
-          ))}
+
+        {/* Tabs */}
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex rounded-lg border-2 border-primary-accent overflow-hidden">
+            <button
+              onClick={() => handleTabChange('massage')}
+              className={`px-6 py-3 text-sm font-bold uppercase tracking-wide transition-all duration-300 ${activeTab === 'massage'
+                ? 'bg-primary-accent text-white'
+                : 'bg-transparent text-primary-accent hover:bg-primary-accent/10'
+                }`}
+            >
+              {tabs.massage}
+            </button>
+            <button
+              onClick={() => handleTabChange('wellness')}
+              className={`px-6 py-3 text-sm font-bold uppercase tracking-wide transition-all duration-300 ${activeTab === 'wellness'
+                ? 'bg-primary-accent text-white'
+                : 'bg-transparent text-primary-accent hover:bg-primary-accent/10'
+                }`}
+            >
+              {tabs.wellness}
+            </button>
+          </div>
+        </div>
+
+        {/* Discount Badge */}
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex items-center gap-2 bg-primary-accent/10 border border-primary-accent/30 rounded-full px-6 py-2">
+            <svg className="h-5 w-5 text-primary-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+            </svg>
+            <span className="text-sm font-bold text-primary-accent">
+              {t('sections.treatments.discount')}
+            </span>
+          </div>
+        </div>
+
+        {/* Content with Slide Animation */}
+        <div className="overflow-hidden">
+          <div
+            key={activeTab}
+            className={`grid md:grid-cols-2 gap-8 lg:gap-12 items-start transition-all duration-500 ease-out ${slideDirection === 'right'
+              ? 'animate-slide-in-right'
+              : 'animate-slide-in-left'
+              }`}
+          >
+            {/* Image */}
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl">
+                <img
+                  src={activeProgram.image}
+                  alt={activeProgram.imageAlt}
+                  className="w-full h-auto object-cover aspect-[4/3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              </div>
+            </div>
+
+            {/* Services List */}
+            <div className="space-y-6">
+              {activeProgram.services.map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-white/50 dark:bg-white/5 backdrop-blur-sm rounded-xl p-5 border border-primary-accent/20 hover:border-primary-accent/40 transition-colors"
+                >
+                  <h3 className="text-lg font-bold text-primary dark:text-primary-accent mb-3">
+                    {service.name}
+                  </h3>
+                  <div className="space-y-2">
+                    {service.prices.map((priceItem, priceIndex) => (
+                      <div
+                        key={priceIndex}
+                        className="flex justify-between items-center text-sm"
+                      >
+                        <span className="text-text-light/70 dark:text-text-dark/70">
+                          {priceItem.duration}
+                        </span>
+                        <span className="font-semibold text-primary-accent">
+                          {priceItem.price}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* Animation Styles */}
+      <style>{`
+        @keyframes slideInRight {
+          from {
+            opacity: 0;
+            transform: translateX(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        @keyframes slideInLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        .animate-slide-in-right {
+          animation: slideInRight 0.5s ease-out forwards;
+        }
+        .animate-slide-in-left {
+          animation: slideInLeft 0.5s ease-out forwards;
+        }
+      `}</style>
     </section>
   )
 }
