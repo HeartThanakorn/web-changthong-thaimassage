@@ -1,20 +1,45 @@
+import { useState, useEffect } from 'react'
 import Button from '@/components/ui/Button.jsx'
 import { SETMORE_BOOKING_URL } from '@/constants.js'
 import { useTranslation } from 'react-i18next'
 
-const HERO_BACKGROUND = '/images/hero-placeholder.jpg'
+const HERO_IMAGES = [
+  '/images/hero-placeholder.jpg',
+  '/images/hero-placeholder2.jpg',
+  '/images/hero-placeholder3.jpg',
+]
 
 export default function HeroSection() {
   const { t } = useTranslation()
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % HERO_IMAGES.length)
+    }, 5000) // Change image every 5 seconds
+
+    return () => clearInterval(interval)
+  }, [])
 
   return (
-    <section className="@container">
-      <div
-        className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center bg-cover bg-center bg-no-repeat p-4"
-        style={{
-          backgroundImage: `linear-gradient(rgba(26, 71, 49, 0.6) 0%, rgba(26, 71, 49, 0.8) 100%), url("${HERO_BACKGROUND}")`,
-        }}
-      >
+    <section className="@container relative">
+      {/* Background Images with Fade Transition */}
+      {HERO_IMAGES.map((image, index) => (
+        <div
+          key={image}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
+          style={{
+            backgroundImage: `url("${image}")`,
+            opacity: index === currentImageIndex ? 1 : 0,
+          }}
+        />
+      ))}
+
+      {/* Dark Overlay for Text Readability */}
+      <div className="absolute inset-0 bg-black/40" />
+
+      {/* Content */}
+      <div className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center p-4">
         <div className="flex max-w-2xl flex-col gap-4 text-center">
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-gradient-gold sm:text-5xl md:text-6xl pb-2">
             {t('hero.title')}
@@ -23,9 +48,9 @@ export default function HeroSection() {
             {t('hero.description')}
           </p>
           <div className="mt-6">
-            <Button 
-              href={SETMORE_BOOKING_URL} 
-              external 
+            <Button
+              href={SETMORE_BOOKING_URL}
+              external
               className="mx-auto px-8 py-4 text-xl font-bold shadow-xl hover:shadow-2xl"
             >
               {t('cta.bookEscape')}

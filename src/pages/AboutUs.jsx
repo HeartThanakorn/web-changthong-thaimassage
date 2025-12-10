@@ -37,7 +37,7 @@ function AboutUs() {
             <img
               src="/images/owner-placeholder.png"
               alt={t('about.ownerAlt')}
-              className="rounded-lg shadow-lg w-full max-w-xs"
+              className="rounded-lg shadow-lg w-full max-w-md"
             />
           </div>
 
