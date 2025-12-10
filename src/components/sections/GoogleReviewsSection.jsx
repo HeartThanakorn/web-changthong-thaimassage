@@ -10,7 +10,10 @@ export default function GoogleReviewsSection() {
     const { t } = useTranslation()
 
     return (
-        <section className="py-12 sm:py-16 bg-white">
+        <section
+            className="py-6 sm:py-8"
+            style={{ backgroundColor: '#EDE7F6' }}
+        >
             <div className="container mx-auto px-4">
                 {/* ElfSight Google Reviews Widget */}
                 <div className="max-w-6xl mx-auto">
