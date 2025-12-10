@@ -38,7 +38,7 @@ export default function DatenschutzPage() {
             <p className="leading-relaxed border-l-4 border-primary-accent pl-4 bg-gray-50 dark:bg-white/5 p-4 rounded-r-lg">
               <span className="font-bold">Chang Thong Thaimassage</span><br />
               Thanyatorn Kaewchamlong<br />
-              c/o monbijou hotel berlin, Monbijouplatz 1, 10178 Berlin<br />
+              Fuggerstraße 6, 10777 Berlin<br />
               Telefon: +49 (0) 151 5923 6289<br />
               E-Mail: changthongthaimassage@gmail.com
             </p>

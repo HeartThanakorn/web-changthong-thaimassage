@@ -15,8 +15,8 @@ export const CONTACT_INFO = Object.freeze({
   name: 'Chang Thong Thaimassage',
   phone: '+4915159236289',
   email: 'changthongthaimassage@gmail.com',
-  addressLine1: 'c/o monbijou hotel berlin',
-  addressLine2: 'Monbijouplatz 1 10178 Berlin',
+  addressLine1: 'Fuggerstraße 6',
+  addressLine2: '10777 Berlin',
 })
 
 export const OPENING_HOURS = Object.freeze([

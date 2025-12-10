@@ -25,9 +25,8 @@ export default function ImpressumPage() {
             <p className="leading-relaxed">
               <span className="font-bold">Chang Thong Thaimassage</span><br />
               Thanyatorn Kaewchamlong<br />
-              c/o monbijou hotel berlin<br />
-              Monbijouplatz 1<br />
-              10178 Berlin
+              Fuggerstraße 6<br />
+              10777 Berlin
             </p>
           </div>
 
