@@ -19,7 +19,7 @@ function PictureCredits() {
       <Helmet>
         <title>Bildnachweise | Chang Thong Thaimassage</title>
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://thaithanyamassage.de/picture-credits" />
+        <link rel="canonical" href="https://changthong-thaimassage.de/picture-credits" />
       </Helmet>
       <div className="container mx-auto px-4 py-8 sm:py-12">
         {/* Page Title */}

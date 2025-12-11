@@ -3,7 +3,7 @@ if ! [ -x "$(command -v docker)" ]; then
   exit 1
 fi
 
-domains=(thaithanyamassage.de www.thaithanyamassage.de)
+domains=(changthong-thaimassage.de www.changthong-thaimassage.de)
 rsa_key_size=4096
 data_path="./certbot"
 email="pleuspabythanya@gmail.com" # Adding your email automatically

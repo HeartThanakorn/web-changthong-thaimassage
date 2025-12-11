@@ -25,7 +25,7 @@ function ContactUs() {
           name="description"
           content="Vereinbaren Sie jetzt Ihren Termin. Kontaktieren Sie uns für Buchungen, Gutscheine oder Fragen. Wir freuen uns auf Ihren Besuch in Berlin."
         />
-        <link rel="canonical" href="https://thaithanyamassage.de/contact-us" />
+        <link rel="canonical" href="https://changthong-thaimassage.de/contact-us" />
       </Helmet>
       <div className="container mx-auto px-4 py-8 sm:py-12">
         {/* Page Title */}

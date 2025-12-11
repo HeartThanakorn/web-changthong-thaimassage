@@ -24,7 +24,7 @@ export default function HomePage() {
           name="description"
           content="Erleben Sie authentische Thai-Massage und Entspannung im Herzen von Berlin. Traditionelle Techniken, Aromatherapie und Wellness für Körper und Geist bei Chang Thong Thaimassage."
         />
-        <link rel="canonical" href="https://thaithanyamassage.de/" />
+        <link rel="canonical" href="https://changthong-thaimassage.de/" />
       </Helmet>
       <HeroSection />
       <EssenceSection />

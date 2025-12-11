@@ -22,7 +22,7 @@ function AboutUs() {
           name="description"
           content="Lernen Sie unser erfahrenes Team kennen. Chang Thong Thaimassage bietet zertifizierte Massagetherapeuten und eine ruhige Atmosphäre für Ihre Erholung."
         />
-        <link rel="canonical" href="https://thaithanyamassage.de/about-us" />
+        <link rel="canonical" href="https://changthong-thaimassage.de/about-us" />
       </Helmet>
       <div className="container mx-auto px-4 py-8 sm:py-12">
         {/* Page Title */}

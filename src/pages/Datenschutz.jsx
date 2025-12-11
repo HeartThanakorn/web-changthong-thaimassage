@@ -7,7 +7,7 @@ export default function DatenschutzPage() {
       <Helmet>
         <title>Datenschutz | Chang Thong Thaimassage</title>
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://thaithanyamassage.de/datenschutz" />
+        <link rel="canonical" href="https://changthong-thaimassage.de/datenschutz" />
       </Helmet>
       <section className="mx-auto max-w-3xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8">
         {/* Page Title */}

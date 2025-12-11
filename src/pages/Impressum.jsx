@@ -7,7 +7,7 @@ export default function ImpressumPage() {
       <Helmet>
         <title>Impressum | Chang Thong Thaimassage</title>
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://thaithanyamassage.de/impressum" />
+        <link rel="canonical" href="https://changthong-thaimassage.de/impressum" />
       </Helmet>
       <section className="mx-auto max-w-3xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8">
         {/* Page Title */}
