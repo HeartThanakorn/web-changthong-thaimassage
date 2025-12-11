@@ -59,11 +59,11 @@ export default function TreatmentsSection() {
 
         {/* Discount Badge */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-primary-accent/10 border border-primary-accent/30 rounded-full px-6 py-2">
-            <svg className="h-5 w-5 text-primary-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-primary-accent/20 via-primary-accent/10 to-primary-accent/20 border-2 border-primary-accent rounded-full px-8 py-4 shadow-lg animate-pulse-subtle">
+            <svg className="h-8 w-8 text-primary-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
             </svg>
-            <span className="text-sm font-bold text-primary-accent">
+            <span className="text-xl sm:text-2xl font-extrabold text-primary-accent tracking-wide">
               {t('sections.treatments.discount')}
             </span>
           </div>
@@ -151,11 +151,24 @@ export default function TreatmentsSection() {
             transform: translateX(0);
           }
         }
+        @keyframes pulseSubtle {
+          0%, 100% {
+            transform: scale(1);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+          }
+          50% {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(212, 175, 55, 0.3);
+          }
+        }
         .animate-slide-in-right {
           animation: slideInRight 0.5s ease-out forwards;
         }
         .animate-slide-in-left {
           animation: slideInLeft 0.5s ease-out forwards;
+        }
+        .animate-pulse-subtle {
+          animation: pulseSubtle 2s ease-in-out infinite;
         }
       `}</style>
     </section>
