@@ -65,6 +65,10 @@ function ContactUs() {
                 <a href="tel:+4916097040177" className="hover:text-primary-accent transition-colors">
                   +49 160 970 401 77
                 </a>
+                {' / '}
+                <a href="tel:+4915115512242" className="hover:text-primary-accent transition-colors">
+                  +49 151 155 122 42
+                </a>
               </p>
               <p className="text-lg text-primary dark:text-text-dark leading-relaxed">
                 <span className="font-semibold">{t('contact.whatsappLabel')}</span>{' '}
@@ -75,6 +79,15 @@ function ContactUs() {
                   className="hover:text-primary-accent transition-colors"
                 >
                   +49 160 970 401 77
+                </a>
+                {' / '}
+                <a
+                  href="https://wa.me/4915115512242"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-accent transition-colors"
+                >
+                  +49 151 155 122 42
                 </a>
               </p>
               <p className="text-lg text-primary dark:text-text-dark leading-relaxed">
