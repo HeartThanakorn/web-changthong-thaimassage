@@ -68,45 +68,17 @@ function PictureCredits() {
               <ol className="list-decimal list-inside space-y-2 text-base text-primary dark:text-text-dark">
                 <li>
                   <Trans
-                    i18nKey="credits.antistressImg"
-                    components={[
-                      <strong className="font-bold" />,
-                      <a
-                        href="https://www.freepik.com/free-photo/woman-relaxing-spa_12930396.htm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary-accent hover:underline"
-                      />
-                    ]}
-                  />
-                </li>
-                <li>
-                  <Trans
-                    i18nKey="credits.deeptissueImg"
-                    components={[
-                      <strong className="font-bold" />,
-                      <a
-                        href="https://www.freepik.com/free-photo/young-woman-receiving-back-massage-spa-center_1319025.htm"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary-accent hover:underline"
-                      />
-                    ]}
-                  />
-                </li>
-                <li>
-                  <Trans
-                    i18nKey="credits.lomilomiImg"
+                    i18nKey="credits.massageProgramImg"
                     components={[<strong className="font-bold" />]}
                   />
                 </li>
                 <li>
                   <Trans
-                    i18nKey="credits.footmassageImg"
+                    i18nKey="credits.wellnessProgramImg"
                     components={[
                       <strong className="font-bold" />,
                       <a
-                        href="https://www.freepik.com/free-photo/close-up-foot-massage-concept_7946001.htm"
+                        href="https://www.freepik.com/free-photo/woman-relaxing-spa_12930543.htm"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary-accent hover:underline"
