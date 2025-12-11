@@ -59,12 +59,17 @@ export default function TreatmentsSection() {
 
         {/* Discount Badge */}
         <div className="flex justify-center mb-4">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-primary-accent/20 via-primary-accent/10 to-primary-accent/20 border-2 border-primary-accent rounded-full px-8 py-4 shadow-lg animate-pulse-subtle">
-            <svg className="h-8 w-8 text-primary-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-            </svg>
-            <span className="text-xl sm:text-2xl font-extrabold text-primary-accent tracking-wide">
-              {t('sections.treatments.discount')}
+          <div className="inline-flex flex-col items-center gap-2 bg-gradient-to-r from-primary-accent/20 via-primary-accent/10 to-primary-accent/20 border-2 border-primary-accent rounded-2xl px-8 py-4 shadow-lg animate-pulse-subtle">
+            <div className="flex items-center gap-3">
+              <svg className="h-8 w-8 text-primary-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+              </svg>
+              <span className="text-xl sm:text-2xl font-extrabold text-primary-accent tracking-wide">
+                {t('sections.treatments.discountTitle')}
+              </span>
+            </div>
+            <span className="text-xs sm:text-sm text-text-light/70 dark:text-text-dark/70 text-center max-w-md">
+              {t('sections.treatments.discountSubtitle')}
             </span>
           </div>
         </div>

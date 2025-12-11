@@ -63,7 +63,8 @@
     "treatments": {
       "title": "Our Services",
       "subtitle": "Professional massages for your well-being – with transparent pricing.",
-      "discount": "€5 DISCOUNT ON COUPLES MASSAGE",
+      "discountTitle": "Up to €5 Couples Discount*",
+      "discountSubtitle": "*total. For couples and friends who arrive together and want to enjoy a massage at the same time.",
       "loyaltyPromo": "10 MASSAGES = 50% OFF THE 11TH",
       "tabs": {
         "massage": "MASSAGE PROGRAM",

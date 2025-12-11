@@ -63,7 +63,8 @@
     "treatments": {
       "title": "Unsere Leistungen",
       "subtitle": "Professionelle Massagen für Ihr Wohlbefinden – mit transparenten Preisen.",
-      "discount": "5€ RABATT AUF PAARMASSAGEN",
+      "discountTitle": "Bis zu 5€ Paar-Rabatt*",
+      "discountSubtitle": "*insgesamt. Für Paare und Freunde, die zusammen ankommen und gleichzeitig eine Massage genießen möchten.",
       "loyaltyPromo": "10 MASSAGEN = 50% RABATT AUF DIE 11.",
       "tabs": {
         "massage": "MASSAGEPROGRAMM",
