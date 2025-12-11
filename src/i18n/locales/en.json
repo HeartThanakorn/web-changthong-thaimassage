@@ -40,6 +40,8 @@
     "addressTitle": "Our Location",
     "contactTitle": "Get in Touch",
     "phoneLabel": "Phone:",
+    "mobileLabel": "Mobile:",
+    "whatsappLabel": "WhatsApp:",
     "emailLabel": "Email:",
     "mapTitle": "Find Us"
   },
@@ -244,7 +246,7 @@
     "address": {
       "line1": "Fuggerstraße 6",
       "line2": "10777 Berlin",
-      "phone": "+4903058799820",
+      "phone": "+49 30 587 998 20",
       "email": "changthong.berlin@gmail.com"
     },
     "hours": {

@@ -55,10 +55,33 @@ function ContactUs() {
                 {t('contact.contactTitle')}
               </h2>
               <p className="text-lg text-primary dark:text-text-dark leading-relaxed">
-                <span className="font-semibold">{t('contact.phoneLabel')}</span> {t('footer.address.phone')}
+                <span className="font-semibold">{t('contact.phoneLabel')}</span>{' '}
+                <a href="tel:+4903058799820" className="hover:text-primary-accent transition-colors">
+                  {t('footer.address.phone')}
+                </a>
               </p>
               <p className="text-lg text-primary dark:text-text-dark leading-relaxed">
-                <span className="font-semibold">{t('contact.emailLabel')}</span> {t('footer.address.email')}
+                <span className="font-semibold">{t('contact.mobileLabel')}</span>{' '}
+                <a href="tel:+4916097040177" className="hover:text-primary-accent transition-colors">
+                  +49 160 970 401 77
+                </a>
+              </p>
+              <p className="text-lg text-primary dark:text-text-dark leading-relaxed">
+                <span className="font-semibold">{t('contact.whatsappLabel')}</span>{' '}
+                <a
+                  href="https://wa.me/4916097040177"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-accent transition-colors"
+                >
+                  +49 160 970 401 77
+                </a>
+              </p>
+              <p className="text-lg text-primary dark:text-text-dark leading-relaxed">
+                <span className="font-semibold">{t('contact.emailLabel')}</span>{' '}
+                <a href="mailto:changthong.berlin@gmail.com" className="hover:text-primary-accent transition-colors">
+                  {t('footer.address.email')}
+                </a>
               </p>
             </div>
 
