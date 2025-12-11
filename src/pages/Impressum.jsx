@@ -24,7 +24,7 @@ export default function ImpressumPage() {
             </h2>
             <p className="leading-relaxed">
               <span className="font-bold">Chang Thong Thaimassage</span><br />
-              Yupin Danz<br />
+              Yuphin Danz<br />
               Fuggerstraße 6<br />
               10777 Berlin
             </p>

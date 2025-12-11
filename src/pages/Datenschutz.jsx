@@ -37,7 +37,7 @@ export default function DatenschutzPage() {
             </p>
             <p className="leading-relaxed border-l-4 border-primary-accent pl-4 bg-gray-50 dark:bg-white/5 p-4 rounded-r-lg">
               <span className="font-bold">Chang Thong Thaimassage</span><br />
-              Yupin Danz<br />
+              Yuphin Danz<br />
               Fuggerstraße 6, 10777 Berlin<br />
               Telefon: +49 (0) 30 587 998 20<br />
               E-Mail: changthong.berlin@gmail.com
