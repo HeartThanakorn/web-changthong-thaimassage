@@ -33,7 +33,15 @@
     "bio2": "<0>Die Bedeutung von Chang Thong</0> „Chang Thong“ bedeutet Goldener Elefant. In der thailändischen Kultur ist der Elefant ein verehrtes Symbol für Stärke, Weisheit und Harmonie. Der Goldene Elefant steht für eine kraftvolle, positive Energie: ruhig und doch stark, weise und doch bescheiden, immer vorwärtsgewandt. Diesen Geist bringe ich in jede Behandlung und zu jedem Gast, den wir willkommen heißen.",
     "bio3": "Bei Chang Thong bieten wir mehr als nur Massagen. Wir bieten Fürsorge, Verbundenheit und einen Ort, an dem Sie sich sicher, gesehen und wertgeschätzt fühlen können.",
     "qualificationsTitle": "Meine Qualifikationen",
-    "certificateAlt": "Professionelles Zertifikat"
+    "certificateAlt": "Professionelles Zertifikat",
+    "certificates": {
+      "title": "Unsere Zertifikate",
+      "subtitle": "Professionelle Qualifikationen und Akkreditierungen für höchste Qualitätsstandards.",
+      "landscapeTitle": "Allgemeine Zertifikate",
+      "portraitTitle": "Fachliche Zertifikate",
+      "clickToZoom": "Zum Vergrößern klicken",
+      "placeholderNote": "Platzhalterbild - wird durch echtes Zertifikat ersetzt"
+    }
   },
   "contact": {
     "pageTitle": "Kontakt",

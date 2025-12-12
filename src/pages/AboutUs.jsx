@@ -1,13 +1,14 @@
 import { useTranslation, Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import Layout from '../components/layout/Layout';
+import CertificatesCarousel from '../components/sections/CertificatesCarousel';
 
 /**
  * AboutUs Page (Über Uns)
  * 
  * Features:
  * - Therapist introduction with photo and bio
- * - Qualifications section with 4 certificate images
+ * - Certificates carousel with landscape and portrait images
  * - Fully responsive layout
  * - i18n support for DE/EN
  */
@@ -58,37 +59,8 @@ function AboutUs() {
           </div>
         </div>
 
-        {/* Section 2: Qualifications - Hidden until certificates are ready */}
-        {/* <div className="mt-16 sm:mt-24">
-          <h2 className="text-2xl font-bold text-primary-accent text-center mb-12">
-            {t('about.qualificationsTitle')}
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-12">
-            <img
-              src="/images/cert-1-placeholder.jpg"
-              alt={t('about.certificateAlt')}
-              className="rounded-lg shadow-md border-4 border-primary-accent/30 w-full"
-            />
-            <img
-              src="/images/cert-2-placeholder.png"
-              alt={t('about.certificateAlt')}
-              className="rounded-lg shadow-md border-4 border-primary-accent/30 w-full"
-            />
-            <img
-              src="/images/cert-3-placeholder.png"
-              alt={t('about.certificateAlt')}
-              className="rounded-lg shadow-md border-4 border-primary-accent/30 w-full"
-            />
-            <img
-              src="/images/cert-4-placeholder.jpg"
-              alt={t('about.certificateAlt')}
-              className="rounded-lg shadow-md border-4 border-primary-accent/30 w-full"
-            />
-          </div>
-
-          {/* TODO: (Rechtlicher Hinweis) Alle Platzhalterbilder (owner-placeholder.jpg und cert-*.jpg) MÜSSEN vor dem Go-Live durch echte Fotos ersetzt werden, um Abmahnungen zu vermeiden. */}
-        {/* </div> */}
+        {/* Section 2: Certificates Carousel */}
+        <CertificatesCarousel />
       </div>
     </Layout>
   );
