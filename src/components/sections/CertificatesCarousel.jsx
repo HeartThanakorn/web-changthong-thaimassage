@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
  * 
  * A hybrid carousel that displays certificates in two categories:
  * - Landscape certificates (3 images)
- * - Portrait certificates (10 images from 3 institutions: 1, 4, 5)
+ * - Portrait certificates (9 images from 3 institutions: 1, 3, 5)
  * 
  * Features:
  * - Auto-play with pause on hover/touch
@@ -26,17 +26,16 @@ const LANDSCAPE_CERTIFICATES = [
 const PORTRAIT_CERTIFICATES = [
   // Institution 1 (1 image)
   { id: 'port-1', src: '/images/cert-portrait-1.jpg', alt: 'Certificate 1' },
-  // Institution 2 (4 images)
+  // Institution 2 (3 images)
   { id: 'port-2', src: '/images/cert-portrait-2.jpg', alt: 'Certificate 2' },
   { id: 'port-3', src: '/images/cert-portrait-3.jpg', alt: 'Certificate 3' },
   { id: 'port-4', src: '/images/cert-portrait-4.jpg', alt: 'Certificate 4' },
-  { id: 'port-5', src: '/images/cert-portrait-5.jpg', alt: 'Certificate 5' },
   // Institution 3 (5 images)
+  { id: 'port-5', src: '/images/cert-portrait-5.jpg', alt: 'Certificate 5' },
   { id: 'port-6', src: '/images/cert-portrait-6.jpg', alt: 'Certificate 6' },
   { id: 'port-7', src: '/images/cert-portrait-7.jpg', alt: 'Certificate 7' },
   { id: 'port-8', src: '/images/cert-portrait-8.jpg', alt: 'Certificate 8' },
   { id: 'port-9', src: '/images/cert-portrait-9.jpg', alt: 'Certificate 9' },
-  { id: 'port-10', src: '/images/cert-portrait-10.jpg', alt: 'Certificate 10' },
 ];
 
 // Auto-play interval in milliseconds
@@ -136,21 +135,21 @@ function CertificatesCarousel() {
   };
 
   // Carousel Section component
-  const CarouselSection = ({ 
-    title, 
-    items, 
-    currentIndex, 
-    totalSlides, 
-    onPrev, 
-    onNext, 
-    onDotClick, 
+  const CarouselSection = ({
+    title,
+    items,
+    currentIndex,
+    totalSlides,
+    onPrev,
+    onNext,
+    onDotClick,
     perSlide,
-    isPortrait = false 
+    isPortrait = false
   }) => {
     const visibleItems = getVisibleItems(items, currentIndex, perSlide);
-    
+
     return (
-      <div 
+      <div
         className="mb-12"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -196,13 +195,13 @@ function CertificatesCarousel() {
 
           {/* Slides Container */}
           <div className="overflow-hidden mx-6 sm:mx-14">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {/* Generate all slides */}
               {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                <div 
+                <div
                   key={slideIndex}
                   className="flex-shrink-0 w-full flex justify-center gap-3 sm:gap-4 md:gap-6 px-2"
                 >
@@ -216,7 +215,7 @@ function CertificatesCarousel() {
                       `}
                     >
                       {/* Certificate Image Placeholder */}
-                      <div 
+                      <div
                         className={`
                           relative overflow-hidden rounded-lg shadow-lg 
                           border-4 border-primary-accent/30 group-hover:border-primary-accent
@@ -228,14 +227,14 @@ function CertificatesCarousel() {
                       >
                         {/* Placeholder content - will be replaced with actual images */}
                         <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4">
-                          <svg 
-                            className="w-8 h-8 sm:w-12 sm:h-12 text-primary-accent/50 mb-2" 
-                            fill="none" 
-                            stroke="currentColor" 
+                          <svg
+                            className="w-8 h-8 sm:w-12 sm:h-12 text-primary-accent/50 mb-2"
+                            fill="none"
+                            stroke="currentColor"
                             viewBox="0 0 24 24"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} 
-                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                             />
                           </svg>
                           <span className="text-xs sm:text-sm text-primary/60 dark:text-primary-accent/60 text-center">
@@ -266,8 +265,8 @@ function CertificatesCarousel() {
                   onClick={() => onDotClick(index)}
                   className={`
                     w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300
-                    ${index === currentIndex 
-                      ? 'bg-primary-accent scale-125' 
+                    ${index === currentIndex
+                      ? 'bg-primary-accent scale-125'
                       : 'bg-primary/30 hover:bg-primary/50'
                     }
                   `}
@@ -321,7 +320,7 @@ function CertificatesCarousel() {
 
       {/* Lightbox Modal */}
       {lightboxImage && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
           onClick={closeLightbox}
         >
@@ -338,7 +337,7 @@ function CertificatesCarousel() {
           </button>
 
           {/* Lightbox Image Container */}
-          <div 
+          <div
             className="relative max-w-4xl max-h-[90vh] w-full"
             onClick={(e) => e.stopPropagation()}
           >
@@ -346,14 +345,14 @@ function CertificatesCarousel() {
             <div className="bg-gradient-to-br from-background-light to-gray-200 dark:from-background-dark dark:to-primary/30 
                             rounded-xl shadow-2xl border-4 border-primary-accent aspect-[3/4] max-h-[80vh] w-auto mx-auto
                             flex flex-col items-center justify-center p-8">
-              <svg 
-                className="w-24 h-24 text-primary-accent/50 mb-4" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-24 h-24 text-primary-accent/50 mb-4"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} 
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 />
               </svg>
               <span className="text-xl text-primary/60 dark:text-primary-accent/60 text-center">
