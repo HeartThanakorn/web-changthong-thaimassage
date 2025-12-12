@@ -214,7 +214,7 @@ function CertificatesCarousel() {
                         ${isPortrait ? 'w-full max-w-[120px] sm:max-w-[140px] md:max-w-[160px]' : 'w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px]'}
                       `}
                     >
-                      {/* Certificate Image Placeholder */}
+                      {/* Certificate Image */}
                       <div
                         className={`
                           relative overflow-hidden rounded-lg shadow-lg 
@@ -225,22 +225,13 @@ function CertificatesCarousel() {
                           ${isPortrait ? 'aspect-[3/4]' : 'aspect-[4/3]'}
                         `}
                       >
-                        {/* Placeholder content - will be replaced with actual images */}
-                        <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4">
-                          <svg
-                            className="w-8 h-8 sm:w-12 sm:h-12 text-primary-accent/50 mb-2"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                            />
-                          </svg>
-                          <span className="text-xs sm:text-sm text-primary/60 dark:text-primary-accent/60 text-center">
-                            {cert.alt}
-                          </span>
-                        </div>
+                        {/* Actual Certificate Image */}
+                        <img
+                          src={cert.src}
+                          alt={cert.alt}
+                          className="absolute inset-0 w-full h-full object-contain p-1"
+                          loading="lazy"
+                        />
 
                         {/* Hover Overlay */}
                         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300 flex items-center justify-center">
@@ -338,30 +329,15 @@ function CertificatesCarousel() {
 
           {/* Lightbox Image Container */}
           <div
-            className="relative max-w-4xl max-h-[90vh] w-full"
+            className="relative max-w-4xl max-h-[90vh] w-full flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Placeholder for lightbox - will be replaced with actual image */}
-            <div className="bg-gradient-to-br from-background-light to-gray-200 dark:from-background-dark dark:to-primary/30 
-                            rounded-xl shadow-2xl border-4 border-primary-accent aspect-[3/4] max-h-[80vh] w-auto mx-auto
-                            flex flex-col items-center justify-center p-8">
-              <svg
-                className="w-24 h-24 text-primary-accent/50 mb-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-              <span className="text-xl text-primary/60 dark:text-primary-accent/60 text-center">
-                {lightboxImage.alt}
-              </span>
-              <span className="text-sm text-primary/40 dark:text-primary-accent/40 mt-2">
-                {t('about.certificates.placeholderNote')}
-              </span>
-            </div>
+            {/* Actual Certificate Image */}
+            <img
+              src={lightboxImage.src}
+              alt={lightboxImage.alt}
+              className="max-h-[85vh] w-auto rounded-xl shadow-2xl border-4 border-primary-accent object-contain"
+            />
           </div>
         </div>
       )}
